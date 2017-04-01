@@ -1,0 +1,82 @@
+﻿@using Microsoft.AspNet.Identity
+@model Periodicals.DAL.Entities.ApplicationUser
+
+@{
+    ViewBag.Title = "Информация о пользователе";
+}
+<h2>Информация о пользователе</h2>
+<div>
+    <h4>@Model.UserName</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Фото
+        </dt>
+        <dd>
+          
+                <img src="@Url.Action("GetImage", "Account", new {id = Model.Id})" />
+          
+        </dd>
+        <dt>
+           Имя
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            Фамилия
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            Телефон
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MobilePhone)
+        </dd>
+        <dt>
+           Город
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            Индекс
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Index)
+        </dd>
+    </dl>
+    @if (User.IsInRole("Admin") && User.Identity.GetUserId() != Model.Id)
+    {
+        string text, style, href;
+        if (Model.LockoutEnabled)
+        {
+            text = "Разблокировать";
+            style = "btn-success";
+            href = Url.Action("UnBlock", new {Controller = "Account", id = Model.Id});
+        }
+        else
+        {
+            text = "Заблокировать";
+            style = "btn-danger";
+            href = Url.Action("Block", "Account", new { id = Model.Id});
+        }
+        <br />
+
+        <input type="button" class="btn btn-block btn-default @style" value="@text" onclick="location.href = '@href'"/>
+     
+    }
+</div>
+<p>
+    @if (User.Identity.Name == Model.UserName)
+    {
+        <span>@Html.ActionLink("Редактировать данные", "Edit", null, htmlAttributes: new { @class = "btn btn-default" })</span>
+
+        <span>@Html.ActionLink("Изменить пароль", "ChangePassword", null, htmlAttributes: new { @class = "btn btn-default" })</span>
+    }
+</p>

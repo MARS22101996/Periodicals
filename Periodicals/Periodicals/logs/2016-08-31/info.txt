@@ -1,0 +1,55 @@
+2016-08-31 09:19:14.8965|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-31 09:20:31.5011|INFO|Periodicals.Controllers.ManageController|Пользователь maria_suvalova@mail.ru изменил информацию о себе
+2016-08-31 09:24:04.2777|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-31 09:25:06.2175|INFO|Periodicals.Controllers.PaymentsController|Пользователь maria_suvalova@mail.ru оплатил подписку на 5 колесо - автомобильный журнал на период 6 месяц(ев) в сумме 300 грн с 8/31/2016 9:25:06 AM по 2/28/2017 9:25:06 AM 
+2016-08-31 09:26:14.9735|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 09:27:45.7298|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru заблокирован
+2016-08-31 09:28:14.4632|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 09:28:21.9023|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru разблокирован
+2016-08-31 09:29:02.0657|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru вошел в систему
+2016-08-31 09:29:22.5177|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 09:29:46.9430|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test добавлена
+2016-08-31 09:29:55.8931|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test1 изменена
+2016-08-31 09:30:05.2977|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test1 была удалена
+2016-08-31 09:32:05.0774|INFO|Periodicals.Controllers.PublicationsController|Издание Test было добавлено
+2016-08-31 09:32:37.6380|INFO|Periodicals.Controllers.PublicationsController|Издание Test1 было изменено
+2016-08-31 09:33:07.7501|INFO|Periodicals.Controllers.PublicationsController|Издание Test1 было удалено
+2016-08-31 09:37:04.6212|INFO|Periodicals.Controllers.AccountController|Пользователь support1@periodicals.com вошел в систему
+2016-08-31 09:54:03.2325|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-31 09:55:01.9770|INFO|Periodicals.Controllers.ManageController|Пользователь maria_suvalova@mail.ru изменил информацию о себе
+2016-08-31 09:59:12.1357|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 100 грн. Теперь сумма на его счету составляет 100 грн.
+2016-08-31 10:01:12.0140|INFO|Periodicals.Controllers.PaymentsController|Пользователь maria_suvalova@mail.ru оплатил подписку на 5 колесо - автомобильный журнал на период 1 месяц(ев) в сумме 100 грн с 8/31/2016 10:01:12 AM по 9/30/2016 10:01:12 AM 
+2016-08-31 10:15:54.3604|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-31 10:16:52.6678|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь user1@periodicals.com пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-31 10:17:24.5693|INFO|Periodicals.Controllers.PaymentsController|Пользователь user1@periodicals.com оплатил подписку на 5 колесо - автомобильный журнал на период 4 месяц(ев) в сумме 400 грн с 8/31/2016 10:17:24 AM по 12/31/2016 10:17:24 AM 
+2016-08-31 10:18:50.2667|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 10:30:39.3702|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-31 10:31:22.9458|INFO|Periodicals.Controllers.ManageController|Пользователь maria_suvalova@mail.ru изменил информацию о себе
+2016-08-31 10:32:32.5289|INFO|Periodicals.Controllers.UserPublicationsController|Удалена подписка пользователя maria_suvalova@mail.ru на издание Auto Bild Все ведущие. 
+2016-08-31 10:34:29.7690|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-31 10:34:40.7435|INFO|Periodicals.Controllers.PaymentsController|Пользователь maria_suvalova@mail.ru оплатил подписку на 5 колесо - автомобильный журнал на период 5 месяц(ев) в сумме 500 грн с 8/31/2016 10:34:40 AM по 1/31/2017 10:34:40 AM 
+2016-08-31 10:35:33.3672|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 10:36:15.1967|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru заблокирован
+2016-08-31 10:36:57.4655|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 10:37:05.6893|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru разблокирован
+2016-08-31 10:37:29.6589|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test добавлена
+2016-08-31 10:37:46.6423|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test1 изменена
+2016-08-31 10:38:03.3072|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test1 была удалена
+2016-08-31 10:40:55.4451|INFO|Periodicals.Controllers.PublicationsController|Издание test было добавлено
+2016-08-31 10:41:47.0446|INFO|Periodicals.Controllers.PublicationsController|Издание test было удалено
+2016-08-31 10:43:00.9904|INFO|Periodicals.Controllers.AccountController|Пользователь support1@periodicals.com вошел в систему
+2016-08-31 10:49:26.3804|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova1@mail.ru зарегистрировался в системе
+2016-08-31 10:50:05.5844|INFO|Periodicals.Controllers.ManageController|Пользователь maria_suvalova1@mail.ru изменил информацию о себе
+2016-08-31 10:51:44.2223|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova1@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-31 10:51:53.3541|INFO|Periodicals.Controllers.PaymentsController|Пользователь maria_suvalova1@mail.ru оплатил подписку на 5 колесо - автомобильный журнал на период 6 месяц(ев) в сумме 600 грн с 8/31/2016 10:51:53 AM по 2/28/2017 10:51:53 AM 
+2016-08-31 10:52:17.9196|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 10:52:37.8234|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova1@mail.ru заблокирован
+2016-08-31 10:52:53.8927|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru вошел в систему
+2016-08-31 10:53:15.6840|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-31 10:53:22.3736|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova1@mail.ru разблокирован
+2016-08-31 10:54:17.2554|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test добавлена
+2016-08-31 10:54:25.9959|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test1 изменена
+2016-08-31 10:54:32.4796|INFO|Periodicals.Controllers.TopicsController|Тема изданий Test1 была удалена
+2016-08-31 10:55:39.1707|INFO|Periodicals.Controllers.PublicationsController|Издание Test1 было добавлено
+2016-08-31 10:56:17.4096|INFO|Periodicals.Controllers.PublicationsController|Издание Test1 было удалено
+2016-08-31 10:57:33.9772|INFO|Periodicals.Controllers.AccountController|Пользователь support1@periodicals.com вошел в систему

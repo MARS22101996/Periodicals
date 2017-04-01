@@ -1,0 +1,67 @@
+﻿@model Periodicals.ViewModels.RegisterViewModel
+@{
+    ViewBag.Title = "Регистрация";
+    
+}
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Создайте новую учетную запись.</h4>
+    <hr />
+    
+    <div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.Email), autofocus = "" })
+    <div>
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+    </div>
+                <br>
+                @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.FirstName) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.LastName) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                @Html.TextBoxFor(model => model.MobilePhone, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.MobilePhone) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.MobilePhone, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                @Html.TextBoxFor(model => model.City, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.City) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.City, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                @Html.TextBoxFor(model => model.Index, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.Index) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.Index, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.Password) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", placeholder = Html.DisplayNameFor(model => model.ConfirmPassword) })
+                <div>
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-default" value="Регистрация" />
+                    </div>
+                </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

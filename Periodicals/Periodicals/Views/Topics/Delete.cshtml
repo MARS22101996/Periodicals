@@ -1,0 +1,33 @@
+﻿@model Periodicals.DAL.Entities.Topic
+
+@{
+    ViewBag.Title = "Удаление темы";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Html.DisplayFor(model => model.NameOfTopic)</h2>
+
+<h3>Вы уверенны, что хотите удалить тему?</h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Описание
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="ОК" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "Index1", null, htmlAttributes: new { @class = "btn btn-default" })
+        </div>
+    }
+</div>

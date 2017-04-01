@@ -1,0 +1,111 @@
+﻿@using Microsoft.AspNet.Identity
+@model IEnumerable<Periodicals.DAL.Entities.Publication>
+
+<div id="searchresults">
+    <h3>Сортировка по цене</h3>       
+    @{
+        int i = 0;
+        int ch = 0;
+    }
+    @foreach (var item in Model)
+    {
+        i++;
+        <p></p>
+        <H2>
+            @Html.DisplayFor(modelItem => item.NameOfPublication)
+        </H2>
+        <div class="content">
+            <div class="pic">
+                <img src="@Url.Action("GetImagePublication",  new {id = item.PublicationId})" />
+            </div>
+            <div class="text">
+                @if (item.Description.Length < 400)
+                {
+                    <p>
+                        @item.Description
+
+                    
+                    </p>
+                }
+                else
+                {
+                    <p>
+                        @item.Description.Substring(0, 400)
+
+                        ...
+                    </p>
+                }
+                <p class="price"><strong>Цена, грн./мес. :</strong> @Html.DisplayFor(modelItem => item.PricePerMonth) грн. </p>
+            </div>
+        </div>
+        if (User.IsInRole("Admin"))
+        {
+            <span>@Html.ActionLink("Редактировать", "Edit", new { id = item.PublicationId }, new { @class = "btn btn-default" })</span>
+            <span>@Html.ActionLink("Просмотреть", "Details", new { id = item.PublicationId }, new { @class = "btn btn-default" })</span>
+            <span>@Html.ActionLink("Удалить", "Delete", new { id = item.PublicationId }, new { @class = "btn btn-default" })</span>
+        }
+        else
+        {
+            <span>@Html.ActionLink("Подробнее", "Details", new { id = item.PublicationId }, htmlAttributes: new { @class = "btn btn-default" })</span>
+        }
+        if (User.Identity.IsAuthenticated && !User.IsInRole("Admin") && !User.IsInRole("Support"))
+        {
+            string namediv = "result" + i;
+            foreach (var p in item.UserPublications)
+            {
+                if (p.UserId == User.Identity.GetUserId())
+                {
+                    ch++;
+                }
+            }
+            if (ch == 0)
+            {
+                <div id=@namediv>
+                    @using (Ajax.BeginForm("CreateSubscription", "UserPublications", new { id = item.PublicationId }, new AjaxOptions
+                    {
+                        UpdateTargetId = namediv
+
+                    }))
+                    {
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Количество месяцев</label>
+                                <div class="col-md-10">
+                                    @Html.DropDownList("name", new SelectList(
+                                    new List<Object>
+                                    {
+                                        new {value = "1", text = "1 месяц"},
+                                        new {value = "2", text = "2 месяца"},
+                                        new {value = "3", text = "3 месяца"},
+                                        new {value = "4", text = "4 месяца"},
+                                        new {value = "5", text = "5 месяцев"},
+                                        new {value = "6", text = "6 месяцев"},
+                                        new {value = "7", text = "7 месяцев"},
+                                        new {value = "8", text = "8 месяцев"},
+                                        new {value = "9", text = "9 месяцев"},
+                                        new {value = "10", text = "10 месяцев"},
+                                        new {value = "11", text = "11 месяцев"},
+                                        new {value = "12", text = "12 месяцев"}
+                                    },
+                                    "value",
+                                    "text",
+                                    "1"), htmlAttributes: new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <span><input type="submit" value="Подписаться" class="btn btn-info" id="op-accept" /></span>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <H3>
+                    Вы подписаны на это издание
+                </H3>
+            }
+            ch = 0;
+        }
+    }
+</div>
+

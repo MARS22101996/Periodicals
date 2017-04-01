@@ -1,0 +1,9 @@
+﻿
+    body {
+     background:  url(../img/o-BOOK-COFFEE-facebook.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+

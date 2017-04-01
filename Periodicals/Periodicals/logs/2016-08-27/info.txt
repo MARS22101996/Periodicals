@@ -1,0 +1,75 @@
+2016-08-27 00:06:15.2534|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 03:31:05.8930|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 03:31:35.5330|INFO|Periodicals.Controllers.TopicsController|Тема изданий y добавлена
+2016-08-27 03:32:22.0220|INFO|Periodicals.Controllers.TopicsController|Тема изданий y была удалена
+2016-08-27 03:32:31.0080|INFO|Periodicals.Controllers.TopicsController|Тема изданий t добавлена
+2016-08-27 03:35:24.8200|INFO|Periodicals.Controllers.TopicsController|Тема изданий jk добавлена
+2016-08-27 03:35:43.6690|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 03:35:52.4690|INFO|Periodicals.Controllers.TopicsController|Тема изданий gh добавлена
+2016-08-27 03:38:45.6130|INFO|Periodicals.Controllers.TopicsController|Тема изданий k добавлена
+2016-08-27 03:39:08.9510|INFO|Periodicals.Controllers.TopicsController|Тема изданий 8 добавлена
+2016-08-27 03:42:34.8690|INFO|Periodicals.Controllers.TopicsController|Тема изданий v добавлена
+2016-08-27 03:45:00.1530|INFO|Periodicals.Controllers.TopicsController|Тема изданий g добавлена
+2016-08-27 03:45:00.4790|INFO|Periodicals.Controllers.TopicsController|Тема изданий g добавлена
+2016-08-27 03:45:00.4910|INFO|Periodicals.Controllers.TopicsController|Тема изданий g добавлена
+2016-08-27 03:45:00.5830|INFO|Periodicals.Controllers.TopicsController|Тема изданий g добавлена
+2016-08-27 03:45:00.7080|INFO|Periodicals.Controllers.TopicsController|Тема изданий g добавлена
+2016-08-27 03:54:00.0630|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 03:54:54.9510|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 10000 грн. Теперь сумма на его счету составляет 10000 грн.
+2016-08-27 03:55:42.6760|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 11000 грн.
+2016-08-27 04:07:24.5700|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 04:09:19.3520|INFO|Periodicals.Controllers.AccountController|Пользователь mariasuvalova96@gmail.com зарегистрировался в системе
+2016-08-27 04:09:52.2190|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь mariasuvalova96@gmail.com пополнил свой счет на 10000 грн. Теперь сумма на его счету составляет 10000 грн.
+2016-08-27 04:20:40.7440|INFO|Periodicals.Controllers.TopicsController|Тема изданий 6 добавлена
+2016-08-27 04:26:50.5830|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 04:27:38.0640|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-27 04:54:44.4880|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 04:55:45.5030|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-27 10:04:46.8307|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 10:05:44.7847|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova1@mail.ru зарегистрировался в системе
+2016-08-27 10:06:52.1622|INFO|Periodicals.Controllers.AccountController|Пользователь maria11_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 10:07:45.3502|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 10:08:43.0842|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru заблокирован
+2016-08-27 10:08:53.1277|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:09:00.9207|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru разблокирован
+2016-08-27 10:14:20.3972|INFO|Periodicals.Controllers.AccountController|Пользователь support1@periodicals.com заблокирован
+2016-08-27 10:16:37.7142|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:17:46.5562|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 10:17:57.2972|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com разблокирован
+2016-08-27 10:18:03.4642|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:22:14.5862|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 10:22:23.4122|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:26:51.3027|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 10:26:58.8367|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:37:44.8119|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 10:38:03.4677|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:42:29.9294|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 10:42:38.5829|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован
+2016-08-27 10:55:45.5849|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 10:59:01.7499|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь maria_suvalova@mail.ru пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-08-27 10:59:37.9449|INFO|Periodicals.Controllers.UserPublicationsController|Удалена подписка пользователя maria_suvalova@mail.ru на издание 5 колесо - автомобильный журнал 
+2016-08-27 11:01:30.4419|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 11:03:51.3069|INFO|Periodicals.Controllers.PublicationsController|Издание 1 было добавлено
+2016-08-27 11:04:02.3179|INFO|Periodicals.Controllers.PublicationsController|Издание 1 было изменено
+2016-08-27 11:04:28.4579|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru заблокирован
+2016-08-27 11:04:42.1359|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru разблокирован
+2016-08-27 11:04:53.7859|INFO|Periodicals.Controllers.UserPublicationsController|Удалена подписка пользователя user1@periodicals.com на издание 5 колесо - автомобильный журнал 
+2016-08-27 11:24:52.4132|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 11:54:37.4827|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-27 11:57:46.7264|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 12:05:13.6667|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 13:40:57.5467|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 13:43:39.6482|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 13:44:36.5317|INFO|Periodicals.Controllers.ManageController|Пользователь user1@periodicals.com изменил информацию о себе
+2016-08-27 13:44:54.9897|INFO|Periodicals.Controllers.ManageController|Пользователь user1@periodicals.com изменил информацию о себе
+2016-08-27 13:48:25.4567|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 13:48:40.2652|INFO|Periodicals.Controllers.ManageController|Пользователь user1@periodicals.com изменил информацию о себе
+2016-08-27 14:44:05.3372|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 14:44:09.6722|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 14:44:12.4732|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-27 14:44:18.8932|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 15:07:02.0772|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 15:11:36.9352|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 15:52:12.0522|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 16:22:39.9232|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-27 16:29:43.3532|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему

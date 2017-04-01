@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Periodicals.DAL.Entities.UserPublication>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Название издания
+        </th>
+        <th>
+            Телефон
+        </th>
+        <th>
+            Имя
+        </th>
+        <th>
+            Фамилия
+        </th>
+        <th>
+            Индекс
+        </th>
+        <th>
+            Город
+        </th>
+        <th>
+            Дата начала
+        </th>
+        <th>
+            Дата конца
+        </th>
+
+        <th>
+            Цена подписки, грн. / мес.
+        </th>
+        <th>
+            Стоимость
+        </th>
+        <th>
+            Статус
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        var cost = item.Publication.PricePerMonth * item.Period;
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publication.NameOfPublication)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.MobilePhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Index)
+            </td>
+            <td>
+                @item.StartDate.ToString("dd.MM.yyyy")
+            </td>
+
+            <td>
+                @item.EndDate.ToString("dd.MM.yyyy")
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Publication.PricePerMonth)
+            </td>
+            <td>
+                @cost
+            </td>
+            <td>
+                Оплачено
+            </td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>
+
+                    <span>@Html.ActionLink("Удалить", "Delete1", new { id = item.UserPublicationId }, htmlAttributes: new { @class = "btn btn-default" })</span>
+
+                </td>
+            }
+
+        </tr>
+    }
+</table>
+
+
+
+<h3>Всего : @ViewBag.SumPayed грн.</h3>

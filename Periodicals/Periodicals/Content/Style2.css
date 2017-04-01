@@ -1,0 +1,13 @@
+﻿body {
+     background:  url(../img/404-not-found-error-404.jpg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; 
+}
+.center 
+{
+width: 100%;
+text-align: center;
+top: 80%;
+}

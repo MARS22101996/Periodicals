@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Periodicals.DAL.Entities.PersonalAccount>
+
+@{
+    ViewBag.Title = "Персональный счет";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Персональный счет</h2>
+<p>
+    @Html.ActionLink("Пополнить счет", "Create", "Replenishments", null, htmlAttributes: new { @class = "btn btn-default" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+           Баланс, грн.
+        </th>
+        <th>
+           Имя
+        </th>
+        <th>
+           Фамилия
+        </th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>     
+        <td>
+            @Html.DisplayFor(modelItem => item.Balance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationUser.LastName)
+        </td>    
+    </tr>
+}
+</table>

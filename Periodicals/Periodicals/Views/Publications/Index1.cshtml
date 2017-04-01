@@ -1,0 +1,185 @@
+﻿@using Microsoft.AspNet.Identity
+@using Periodicals.DAL.Entities
+@model IEnumerable<Periodicals.DAL.Entities.Publication>
+
+@{
+    ViewBag.Title = "Издания по теме";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    function OnBegin() {
+        alert("Происходит отправка запроса");
+    }
+
+    function OnSuccess(data) {
+        alert("Запрос был успешно выполнен. Получены следующие данные: \n" + data);
+    }
+
+    function OnFailure(request, error) {
+        $("#results").html("Книги указанного автора не содержатся в базе данных.");
+    }
+
+    function OnComplete(request, status) {
+        alert("Статус запроса : " + status);
+    }
+</script>
+<div class="custom">
+
+    <h1>@ViewBag.TopicName </h1>
+    <hr />
+    <p>
+        @ViewBag.Description
+    </p>
+    @if (User.IsInRole("Admin"))
+    {
+        <span>@Html.ActionLink("Редактировать", "Edit1", new { controller = "Topics", id = (int)ViewBag.Topic1 }, new { @class = "btn btn-default" })</span>
+        <span>@Html.ActionLink("Удалить", "Delete", new { controller = "Topics", id = (int)ViewBag.Topic1 }, new { @class = "btn btn-default" })</span>
+    }
+    @using (Ajax.BeginForm("PublicationSearch", "Publications", new { topicId = (int)ViewBag.Topic1 }, new AjaxOptions
+    {
+        UpdateTargetId = "results",
+        HttpMethod = "POST"
+
+    }))
+    {
+        <input type="text" name="name" />
+            <input class="btn btn-default" type="submit" value="Поиск" />
+    }
+    <span>@Ajax.ActionLink("Сортировать по названию", "OrderByName", new { topicId = (int)ViewBag.Topic1 }, new AjaxOptions { UpdateTargetId = "results" }, new { @class = "btn btn-default" })</span>
+    <span>@Ajax.ActionLink("Сортировать по цене", "OrderByPrice", new { topicId = (int)ViewBag.Topic1 }, new AjaxOptions { UpdateTargetId = "results" }, new { @class = "btn btn-default" })</span>
+
+    @*<p>
+            @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-default" })
+        </p>*@
+    <div id="results">
+
+        @{
+            int i = 0;
+            int ch = 0;
+        }
+        @foreach (var item in Model)
+        {
+            i++;
+            <p></p>
+            <H2 class="NameOfSmth">
+                @Html.DisplayFor(modelItem => item.NameOfPublication)
+            </H2>
+                    <div class="content">
+                        <div class="pic">
+                            <img src="@Url.Action("GetImagePublication",  new {id = item.PublicationId})" />
+                        </div>
+                        <div class="text">
+                            @if (item.Description.Length < 400)
+                {
+                                <p>
+                                    @item.Description
+
+                                    ...
+                                </p>
+                            }
+                            else
+                            {
+                                <p>
+                                    @item.Description.Substring(0, 400)
+
+                                    ...
+                                </p>
+                            }
+                            <p class="price"><strong>Цена, грн./мес. :</strong> @Html.DisplayFor(modelItem => item.PricePerMonth) грн. </p>
+                        </div>
+                    </div>
+            if (User.IsInRole("Admin"))
+            {
+                @*<p>
+                        <span>@Html.ActionLink("Edit", "Edit", new { id = item.PublicationId }, new { @class = "btn btn-default" })</span>
+                        <span>@Html.ActionLink("Details", "Details", new { id = item.PublicationId }, new { @class = "btn btn-default" })</span>
+                        <span>@Html.ActionLink("Delete", "Delete", new { id = item.PublicationId }, new { @class = "btn btn-default" })</span>
+                    </p>*@
+                <span>@Html.ActionLink("Подробнее", "Details", new { id = item.PublicationId }, htmlAttributes: new { @class = "btn btn-default" })</span>
+            }
+            else
+            {
+                <span>@Html.ActionLink("Подробнее", "Details", new { id = item.PublicationId }, htmlAttributes: new { @class = "btn btn-default" })</span>
+            }
+
+            if (User.Identity.IsAuthenticated && !User.IsInRole("Admin") && !User.IsInRole("Support"))
+            {
+                string namediv = "result" + i;
+                foreach (var p in item.UserPublications)
+                {
+                    if (p.UserId == User.Identity.GetUserId())
+                    {
+                        ch++;
+                    }
+                }
+                if (ch == 0)
+                {
+                    <div id=@namediv>
+                        @using (Ajax.BeginForm("CreateSubscription", "UserPublications", new { id = item.PublicationId }, new AjaxOptions
+                        {
+                            UpdateTargetId = namediv
+
+                        }))
+                        {
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-md-2">Количество месяцев</label>
+                                    <div class="col-md-10">
+                                        @Html.DropDownList("name", new SelectList(
+                                    new List<Object>
+                                    {
+                                        new {value = "1", text = "1 месяц"},
+                                        new {value = "2", text = "2 месяца"},
+                                        new {value = "3", text = "3 месяца"},
+                                        new {value = "4", text = "4 месяца"},
+                                        new {value = "5", text = "5 месяцев"},
+                                        new {value = "6", text = "6 месяцев"},
+                                        new {value = "7", text = "7 месяцев"},
+                                        new {value = "8", text = "8 месяцев"},
+                                        new {value = "9", text = "9 месяцев"},
+                                        new {value = "10", text = "10 месяцев"},
+                                        new {value = "11", text = "11 месяцев"},
+                                        new {value = "12", text = "12 месяцев"}
+                                    },
+                                    "value",
+                                    "text",
+                                    "1"), htmlAttributes: new { @class = "form-control" })
+                                    </div>
+                                </div>
+
+                                <span><input type="submit" value="Подписаться" class="btn btn-info" id="op-accept" /></span>
+                                </div>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                        <H3>
+                            Вы подписаны на это издание
+                        </H3>
+                        }
+                        ch = 0;
+                        }
+                        }
+
+
+                    </div>
+
+                </div>
+
+                @Scripts.Render("~/scripts/jquery-1.10.2.min.js")
+                    @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.min.js")
+                    @section Scripts {
+                        @Scripts.Render("~/bundles/jqueryval")
+                        <script>
+                            $('#op-accept').click(function () {
+                                swal("Вы подписались на издание!", "", "success")
+                            });
+
+                        </script>
+                    }
+
+
+
+
+

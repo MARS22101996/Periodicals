@@ -1,0 +1,3 @@
+2016-08-30 14:11:30.2921|ERROR|Periodicals.Controllers.TopicsController|Cannot drop database "aspnet-Periodicals-20160813091427" because it is currently in use.
+2016-08-30 15:53:55.3650|ERROR|Periodicals.Controllers.AccountController|An error occurred while updating the entries. See the inner exception for details.
+2016-08-30 22:30:39.7828|ERROR|Periodicals.Controllers.UserPublicationsController|An error occurred while updating the entries. See the inner exception for details.

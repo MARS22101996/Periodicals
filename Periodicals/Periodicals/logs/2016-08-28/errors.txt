@@ -1,0 +1,13 @@
+2016-08-28 12:35:52.8570|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-28 18:20:00.8670|ERROR|Periodicals.Controllers.PublicationsController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-28 18:20:01.0430|ERROR|Periodicals.Controllers.PublicationsController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-28 18:20:02.8140|ERROR|Periodicals.Controllers.PublicationsController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-28 18:20:11.8580|ERROR|Periodicals.Controllers.PublicationsController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-28 18:20:11.8980|ERROR|Periodicals.Controllers.PublicationsController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-28 18:20:11.9680|ERROR|Periodicals.Controllers.PublicationsController|Value cannot be null or empty.
+Parameter name: contentType

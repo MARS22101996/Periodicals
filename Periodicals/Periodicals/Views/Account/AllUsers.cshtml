@@ -1,0 +1,81 @@
+﻿@using Microsoft.AspNet.Identity
+@model IEnumerable<Periodicals.DAL.Entities.ApplicationUser>
+
+@{
+    ViewBag.Title = "Все пользователи";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Все пользователи</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+           Имя
+        </th>
+        <th>
+           Фамилия
+        </th>
+       
+        <th>
+           Email
+        </th>
+        <th>
+           Телефон
+        </th>
+        <th>
+           Город
+        </th>
+        <th>
+           Индекс
+        </th>
+        <th>
+           Баланс на счету, грн.
+        </th>
+        <th>
+           
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.MobilePhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Index)
+        </td>
+       
+        <td>
+            @foreach (var i in item.PersonalAccounts)
+                {
+                @i.Balance
+            }
+        </td>
+        <td>
+           
+            <span>@Html.ActionLink("Информация", "Details", new { controller = "Manage", id = item.Id }, htmlAttributes: new { @class = "btn btn-default" }) </span>
+            @if (item.Email != "support1@periodicals.com" && User.Identity.GetUserId() != item.Id)
+            {
+            <span>@Html.ActionLink("Подписки", "PublicationsOfUser", new { controller = "UserPublications", userId = item.Id }, htmlAttributes: new { @class = "btn btn-default" })</span>
+            }
+        </td>
+    </tr>
+}
+
+</table>

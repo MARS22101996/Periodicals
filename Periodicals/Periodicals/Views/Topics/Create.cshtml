@@ -1,0 +1,44 @@
+﻿@model Periodicals.ViewModels.TopicViewModel
+
+@{
+    ViewBag.Title = "Добавить тему";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Добавить тему</h2>
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <h3>@ViewBag.Name</h3>
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.NameOfTopic, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NameOfTopic, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NameOfTopic, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, 15, 51, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+            @Html.Label("            ", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="ОК" class="btn btn-default" id="op-accept" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Назад", "Index1", null, htmlAttributes: new { @class = "btn btn-default" })
+</div>
+

@@ -1,0 +1,124 @@
+﻿@model IEnumerable<Periodicals.DAL.Entities.UserPublication>
+
+@{
+    ViewBag.Title = "Мои подписки";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Мои подписки</h2>
+
+@if (!User.IsInRole("Admin"))
+{
+if (ViewBag.Sum > ViewBag.AccountSum)
+ {
+     @Html.Partial("NotEnoughMoney")
+ }
+ else
+ {
+     if (ViewBag.Sum > 0 && ViewBag.Sum <= ViewBag.AccountSum)
+     {
+         <p>
+             @Html.ActionLink("Оплатить", "Create", "Payments", null, htmlAttributes: new { @class = "btn btn-default" })
+         </p>
+     }
+ }
+}
+<table class="table">
+    <tr>
+        <th>
+            Название
+        </th>
+
+        <th>
+            Дата начала
+        </th>
+        <th>
+            Дата конца
+        </th>
+        <th>
+            Период, мес.
+        </th>
+        <th>
+            грн. / мес.
+        </th>
+        <th>
+            Стоимость
+        </th>
+        <th>
+            Статус
+        </th>
+        <th></th>
+    </tr>
+    @{string userId="";}
+    @foreach (var item in Model)
+    {
+        userId = item.UserId;
+
+        var cost = item.Publication.PricePerMonth*item.Period;
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publication.NameOfPublication)
+            </td>
+
+            @if (item.PaymentState != true)
+            {
+                <td>
+                    -
+                </td>
+            }
+            else
+            {
+                <td>
+                   @item.StartDate.ToString("dd.MM.yyyy")
+                </td>
+            }
+            @if (item.PaymentState != true)
+            {
+                <td>
+                    -
+                </td>
+            }
+            else
+            {
+                <td>
+                    @item.EndDate.ToString("dd.MM.yyyy")
+                </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.Period)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publication.PricePerMonth)
+            </td>
+            <td>
+                @cost
+            </td>
+            @if (item.PaymentState != true)
+            {
+                <td>
+                    Не оплачено
+                </td>
+            }
+            else
+            {
+                <td>
+                    Оплачено
+                </td>
+            }
+
+
+            <td>
+                @if (item.PaymentState == false)
+                {
+                    <span> @Html.ActionLink("Редактировать", "Edit", new {id = item.UserPublicationId}, htmlAttributes: new {@class = "btn btn-default"})  </span>
+
+                    <span>@Html.ActionLink("Удалить", "Delete", new {id = item.UserPublicationId}, htmlAttributes: new {@class = "btn btn-default"})</span>
+                }
+            </td>
+        </tr>
+    }
+
+</table>
+<h3>К оплате: @ViewBag.Sum грн.</h3>
+

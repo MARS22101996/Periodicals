@@ -1,0 +1,19 @@
+2016-08-26 09:47:01.4157|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-26 09:47:53.3542|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-26 09:52:12.1542|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-26 09:52:22.0812|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-26 09:52:48.4202|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-26 10:08:25.3607|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-26 10:08:48.6927|ERROR|Periodicals.Controllers.AccountController|Object reference not set to an instance of an object.
+2016-08-26 13:03:11.0954|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:03:26.0259|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:04:04.1579|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:04:21.4059|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:05:26.2519|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:05:43.2199|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:05:55.1319|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:06:05.5149|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 13:07:50.7679|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-26 21:51:19.6595|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType

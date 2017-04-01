@@ -1,0 +1,2 @@
+2016-11-17 23:20:29.6116|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-11-17 23:20:55.5616|INFO|Periodicals.Controllers.TopicsController|Тема изданий 17 добавлена

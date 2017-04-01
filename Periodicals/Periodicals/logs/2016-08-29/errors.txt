@@ -1,0 +1,53 @@
+2016-08-29 03:14:11.6672|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 03:14:11.9932|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 03:35:52.7702|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 03:36:00.3397|ERROR|Periodicals.Controllers.AccountController|Object reference not set to an instance of an object.
+2016-08-29 13:28:56.0434|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 13:29:13.6724|ERROR|Periodicals.Controllers.AccountController|Object reference not set to an instance of an object.
+2016-08-29 13:41:48.0839|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:01:41.8509|ERROR|Periodicals.Controllers.UserPublicationsController|An error occurred while updating the entries. See the inner exception for details.
+2016-08-29 14:02:28.5374|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:02:30.7004|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:02:32.8964|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:02:35.6334|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:02:39.4094|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:03:13.4864|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:03:44.9844|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:03:48.3394|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 14:53:07.9584|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 14:53:14.5414|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 14:53:37.7689|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 15:00:05.1089|ERROR|Periodicals.Controllers.AccountController|Cannot drop database "aspnet-Periodicals-20160813091427" because it is currently in use.
+2016-08-29 15:02:55.8304|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 15:03:00.0304|ERROR|Periodicals.Controllers.AccountController|Object reference not set to an instance of an object.
+2016-08-29 15:08:03.6429|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 15:08:13.6799|ERROR|Periodicals.Controllers.AccountController|Object reference not set to an instance of an object.
+2016-08-29 15:08:27.0904|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 15:10:59.2234|ERROR|Periodicals.Controllers.UserPublicationsController|Object reference not set to an instance of an object.
+2016-08-29 15:12:38.4084|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 15:22:56.5104|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 15:58:00.8029|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 18:43:19.6149|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 18:43:27.5979|ERROR|Periodicals.Controllers.AccountController|Object reference not set to an instance of an object.
+2016-08-29 18:58:41.2649|ERROR|Periodicals.Controllers.UserPublicationsController|An error occurred while updating the entries. See the inner exception for details.
+2016-08-29 19:12:28.8139|ERROR|Periodicals.Controllers.AccountController|Value cannot be null or empty.
+Parameter name: contentType
+2016-08-29 22:26:09.3385|ERROR|Periodicals.Controllers.TopicsController|Attaching an entity of type 'Periodicals.DAL.Entities.Topic' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+2016-08-29 22:26:45.0370|ERROR|Periodicals.Controllers.TopicsController|Attaching an entity of type 'Periodicals.DAL.Entities.Topic' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+2016-08-29 22:27:28.0880|ERROR|Periodicals.Controllers.TopicsController|Attaching an entity of type 'Periodicals.DAL.Entities.Topic' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+2016-08-29 22:31:25.9265|ERROR|Periodicals.Controllers.TopicsController|Attaching an entity of type 'Periodicals.DAL.Entities.Topic' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.
+2016-08-29 22:32:40.5980|ERROR|Periodicals.Controllers.TopicsController|Attaching an entity of type 'Periodicals.DAL.Entities.Topic' failed because another entity of the same type already has the same primary key value. This can happen when using the 'Attach' method or setting the state of an entity to 'Unchanged' or 'Modified' if any entities in the graph have conflicting key values. This may be because some entities are new and have not yet received database-generated key values. In this case use the 'Add' method or the 'Added' entity state to track the graph and then set the state of non-new entities to 'Unchanged' or 'Modified' as appropriate.

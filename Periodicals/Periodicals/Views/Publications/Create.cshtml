@@ -1,0 +1,122 @@
+﻿@model Periodicals.ViewModels.PublicationViewModel
+
+@{
+    ViewBag.Title = "Добавить публикацию";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Добавить публикацию</h2>
+
+@using (Html.BeginForm("Create", "Publications", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h3>@ViewBag.Name</h3>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label id="avatar" class="control-label col-md-2">Обложка</label>
+            <div class="col-md-10">
+                <div>
+                    Загрузить новое изображение:
+                    <input type="file" name="File" class="form-control" accept="image/*" />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.NameOfPublication, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NameOfPublication, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NameOfPublication, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, 15, 51, new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+            @Html.Label("            ", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Periodicity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Periodicity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Periodicity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Format, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Format, new SelectList(
+                  new List<Object>{
+                      new { value = "A2" , text = "А2" },
+                      new { value = "A3" , text = "A3" },
+                      new { value = "A4" , text = "A4"  }
+                    },
+                  "value",
+                  "text",
+                   "A2"), htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Format, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Color, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Color, new SelectList(
+                  new List<Object>{
+                      new { value = "полноцвет" , text = "полноцвет" },
+                      new { value = "черно-белое" , text = "черно-белое" }
+                    },
+                  "value",
+                  "text",
+                   "полноцвет"), htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Color, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Volume, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Volume, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Volume, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PricePerMonth, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PricePerMonth, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PricePerMonth, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2"> Раздел </label>
+            <div class="col-md-10">
+                @Html.ListBoxFor(model => model.OwnTopics, new MultiSelectList(Model.AllTopics, "TopicId", "NameOfTopic", new[] { "1" }), htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.OwnTopics, "", new { @class = "text-danger" })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="ОК" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Periodicals.DAL.Entities.Publication>
+
+@{
+    Layout = null;
+}
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+<link rel="stylesheet" type="text/css" href="~/Content/StylePDF.css" />
+
+<body>
+    <div id="firstpage">
+
+    </div>
+    
+    @foreach (var item in Model)
+    {
+        <div class="content">
+            <H2>
+                @Html.DisplayFor(modelItem => item.NameOfPublication)
+            </H2>
+            <div class="conteiner">
+                <div class="pic">          
+                   <img src="@Url.Action("GetImagePublication",  new {id = item.PublicationId})" height="250" />               
+                </div>
+                <div class="text">
+                    <p>
+                        @item.Description
+                    </p>
+                </div>
+            </div>
+            <p>
+
+            </p>
+            <div class="fortable">
+                <div class="tab">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Периодичность
+                            </th>
+                            <th>
+                                Формат
+                            </th>
+                            <th>
+                                Цвет
+                            </th>
+                            <th>
+                                Объем, стр.
+                            </th>
+                            <th>
+                                Цена, грн
+                            </th>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Periodicity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Format)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Color)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Volume)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PricePerMonth)
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+</body>

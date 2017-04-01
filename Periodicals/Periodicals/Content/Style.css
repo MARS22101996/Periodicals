@@ -1,0 +1,85 @@
+﻿/*body {
+     background:  url(../img/o-BOOK-COFFEE-facebook.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}*/
+.conteiner
+{
+	 min-height:500px;
+}
+.content
+{
+	 min-height:250px;
+}
+.contacts
+{
+     min-height:200px;
+}
+.contacts a{
+    color:#000080; 
+}
+.contactinfo
+{
+font-size:18px !important;
+}
+.price
+{
+font-size:16px !important;
+ color:	#B22222; 
+}
+.pic {
+    float: left; 
+    text-align:center;
+   /* Обтекание картинки текстом */
+   }
+   .text {
+    margin-left: 220px; /* Отступ от левого края */
+ 
+   }
+#director{
+     height:300px !important;
+     width:auto !important;
+     text-align:center;
+ }
+.dir{
+    color:#000080; 
+}
+#my
+{
+    position: relative;
+    min-height:1000px;
+    width:100%;
+    margin: auto;
+    border-collapse: collapse;
+}
+/*.custom h1,h2,h4
+{
+    color:yellow; 
+    font-weight: 800;
+    text-align: center;
+}*/
+/*.NameOfSmth
+{
+     color:yellow; 
+    font-weight: 800;
+    text-align: center;
+}*/
+/*#my img:hover { 
+    
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+}
+#my img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 200px;
+    margin: auto;
+}*/

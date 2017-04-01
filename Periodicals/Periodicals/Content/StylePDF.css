@@ -1,0 +1,56 @@
+﻿body {
+}
+img{
+     width: 200px;
+}
+#firstpage {
+    
+           background:  url(../img/First.jpg);
+           background-size: auto 1260px;
+           min-height: 1250px;
+        }
+.conteiner
+{
+	 min-height:250px;
+}
+.pic {
+    float: left; 
+   /* Обтекание картинки текстом */
+   }
+   .text {
+    margin-left: 250px; /* Отступ от левого края */
+   }
+ h2
+{
+    color:	#B22222; 
+    font-weight: 800;
+    text-align: center;  
+    background:  url(../img/tekstura_pergamenta_pergament_2000x1333.jpg);
+    padding: 2px; /* Поля вокруг текста */
+    font-style: italic; 
+}
+ p
+{
+font-family:Comic Sans, Comic Sans MS, cursive;
+font-size:16px;
+font-style: italic; 
+ 
+}
+ .content
+ {
+     min-height: 625px;
+ }
+ .fortable
+ {
+      background:  url(../img/pergament.jpg);
+      background-size: cover;
+      min-height: 170px;
+ }
+ .tab{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+table{
+    font-style: italic; 
+}

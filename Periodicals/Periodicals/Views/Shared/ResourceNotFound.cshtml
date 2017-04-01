@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/Style2.css" />
+    <title>ResourceNotFound</title>
+</head>
+<body>
+    <div class="center">
+        @Html.ActionLink("Вернуться к сайту", "Index", new { controller = "Home" }, htmlAttributes: new { @class = "btn btn-primary btn-lg btn-danger" })
+    </div>
+</body>
+</html>

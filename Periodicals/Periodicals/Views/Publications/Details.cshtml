@@ -1,0 +1,68 @@
+﻿@model Periodicals.DAL.Entities.Publication
+
+@{
+    ViewBag.Title = "Подробно издание";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Html.DisplayFor(model => model.NameOfPublication)</h2>
+
+<div>  
+    <hr/>
+    <p></p>
+    <div class="content">
+        <div class="pic">
+            <img src="@Url.Action("GetImagePublication",  new {id = Model.PublicationId})" />          
+        </div>
+        <div class="text">
+            <p>
+                @Model.Description
+
+            </p>
+            <p class="price"><strong>Цена, грн./мес. :</strong> @Html.DisplayFor(model => model.PricePerMonth) грн. </p>
+        </div>
+    </div>
+    <dl class="dl-horizontal">
+
+        <dt>
+            Периодичность
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Periodicity)
+        </dd>
+
+        <dt>
+            Формат
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Format)
+        </dd>
+
+        <dt>
+            Цвет
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            Объем, стр.
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Volume)
+        </dd>
+    </dl>
+
+    @foreach (var i in Model.Topics)
+    {
+        <span class="btn btn-info"> @i.NameOfTopic  </span>
+    }
+</div>
+<p>
+
+    @Html.ActionLink("Назад", "Index", null, htmlAttributes: new { @class = "btn btn-default" })
+</p>

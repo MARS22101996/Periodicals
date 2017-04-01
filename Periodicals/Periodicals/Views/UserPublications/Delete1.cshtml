@@ -1,0 +1,74 @@
+﻿@model Periodicals.DAL.Entities.UserPublication
+
+@{
+    ViewBag.Title = "Удаление подписки";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2>Delete</h2>*@
+
+<h3>Вы уверенны, что хотите удалить подписку?</h3>
+<div>
+    @*<h4>UserPublication</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Название
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Publication.NameOfPublication)
+        </dd>
+
+        <dt>
+            Email пользователя
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+
+        <dt>
+            Период, мес.
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Period)
+        </dd>
+
+        <dt>
+            Статус
+        </dt>
+        @if (Model.PaymentState == true)
+        {
+            <dd>
+                Оплачено
+            </dd>
+        }
+        else
+        {
+            <dd>
+                Не оплачено
+            </dd>
+        }
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="ОК" class="btn btn-default" /> |
+            @if (User.IsInRole("Admin"))
+            {
+                @Html.ActionLink("Назад", "Index1", null, htmlAttributes: new { @class = "btn btn-default" })
+            }
+            else
+            {
+                @Html.ActionLink("Назад", "Index", null, htmlAttributes: new { @class = "btn btn-default" })
+            }
+
+        </div>
+    }
+</div>

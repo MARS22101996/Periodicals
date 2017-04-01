@@ -1,0 +1,14 @@
+2016-08-25 17:52:45.4490|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 18:05:23.0840|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 18:48:22.8900|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 18:49:44.3440|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 18:50:56.5010|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 18:51:19.0990|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 18:55:12.2790|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:02:31.5020|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:05:51.6650|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:11:52.6270|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:11:52.6310|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:12:09.8170|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:12:12.0920|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action
+2016-08-25 19:13:01.9580|ERROR|Periodicals.Controllers.HomeController|Error occured in Home controller Index Action

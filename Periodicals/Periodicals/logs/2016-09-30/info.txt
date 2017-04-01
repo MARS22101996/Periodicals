@@ -1,0 +1,6 @@
+2016-09-30 10:14:38.3952|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-09-30 10:16:09.9132|INFO|Periodicals.Controllers.UserPublicationsController|Удалена подписка пользователя user1@periodicals.com на издание 5 колесо - автомобильный журнал 
+2016-09-30 10:16:56.8962|INFO|Periodicals.Controllers.ReplenishmentsController|Пользователь user1@periodicals.com пополнил свой счет на 1000 грн. Теперь сумма на его счету составляет 1000 грн.
+2016-09-30 10:17:15.2872|INFO|Periodicals.Controllers.PaymentsController|Пользователь user1@periodicals.com оплатил подписку на ЗАГАДКИ ИСТОРИИ на период 1 месяц(ев) в сумме 40 грн с 9/30/2016 10:17:15 AM по 10/30/2016 10:17:15 AM 
+2016-09-30 10:17:31.9772|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-09-30 10:17:49.6912|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com заблокирован

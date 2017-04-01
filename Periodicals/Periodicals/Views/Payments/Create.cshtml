@@ -1,0 +1,25 @@
+﻿@model Periodicals.ViewModels.PaymentViewModel
+@{
+    ViewBag.Title = "Оплата";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Оплата</h2>
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    <H3>Оплата: @Model.Sum грн.</H3>
+      <div class="form-horizontal">
+       
+        <hr />
+       
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Оплатить" class="btn btn-info " />
+            </div>
+        </div>
+   
+}
+<div>
+    @Html.ActionLink("Назад", "Index", "UserPublications", null, htmlAttributes: new { @class = "btn btn-default" })
+</div>

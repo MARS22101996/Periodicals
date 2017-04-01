@@ -1,0 +1,8 @@
+2016-08-28 12:07:16.7845|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-28 12:36:04.9800|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-28 12:37:49.2180|INFO|Periodicals.Controllers.UserPublicationsController|Удалена подписка пользователя user1@periodicals.com на издание Auto Bild Все ведущие. 
+2016-08-28 12:48:17.1590|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-28 12:56:59.6320|INFO|Periodicals.Controllers.AccountController|Пользователь admin@periodicals.com вошел в систему
+2016-08-28 14:46:28.4110|INFO|Periodicals.Controllers.AccountController|Пользователь maria_suvalova@mail.ru зарегистрировался в системе
+2016-08-28 15:04:14.9810|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
+2016-08-28 15:08:21.6350|INFO|Periodicals.Controllers.AccountController|Пользователь user1@periodicals.com вошел в систему
